@@ -1,32 +1,172 @@
 .App {
-  text-align: center;
+  background-color: #1e1c24;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 80vw 20vw;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#Side {
+  background: #17161c;
+  border-bottom: solid 1vh #19D676;
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-between;
+  color: #A4A4A4;
+}
+
+.TopHalf img {
+  margin-top: 20px;
+  width: 85%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.controls {
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+.controls ul {
+  list-style-type: none;
+  margin: 6vh 3vw;
+  padding: 0px;
+}
+
+.controls li {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  cursor: pointer;
+  margin-top: 2vh;
+  font-size: 18px;
+}
+
+.controls li:hover {
+  /* font-weight: bold; */
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.controls li svg {
+  margin-right: 15px;
+  height: 32px;
+  width: 32px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* .svgWrapper {
+  height: 24px;
+  width: 24px;
+} */
+
+.generationCount {
+  color: #A4A4A4;
+  text-align: center;
+  font-size: 16px;
+}
+
+#Main {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 0.3vh rgb(25, 214, 118, 0.6);
+}
+
+#Footer {
+  display: none;
+}
+
+.row {
+  display: flex;
+  height: 30px;
+}
+
+.square {
+  display: inline-flex;
+  width: 30px;
+  color: #AFAFAF;
+  border: solid 0.1vh rgb(25, 214, 118, 0.6);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.square:hover {
+  background-color: rgb(25, 214, 118, 0.3);
+}
+
+.square.active {
+  background-color: rgb(25, 214, 118);
+}
+
+@media screen and (max-width: 800px) {
+  .App {
+    grid-template-columns: 1fr;
+    grid-template-rows: 20vh 1fr 7vh;
   }
-  to {
-    transform: rotate(360deg);
+  #Main {
+    border: none;
   }
+  #Side {
+    border: none;
+  }
+  .TopHalf img {
+    margin-top: 0px;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    content: url('./logo-mobile.png');
+  }
+  .controls {
+    /* display: flex; */
+    flex-direction: row;
+  }
+  .generationCount {
+    display: none;
+  }
+  .generationCount-mobile {
+    color: #A4A4A4;
+    text-align: center;
+  }
+  #Footer {
+    box-sizing: border-box;
+    display: flex;
+    background: #17161c;
+    border-bottom: solid 1vh #19D676;
+    align-items: center;
+    justify-content: center;
+  }
+  #Side {
+    grid-row: 1 / 2;
+  }
+  
+  .TopHalf {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .controlsText {
+    /* display: none; */
+  }
+
+  .controls ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px;
+  }
+
+  .controls li {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    width: 60px;
+  }
+
+  .controls li svg {
+    margin: 0px;
+  }
+
 }
