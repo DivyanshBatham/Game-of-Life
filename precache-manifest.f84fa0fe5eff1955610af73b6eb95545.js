@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/Game-of-Life/static/js/runtime~main.a07be2c9.js"
   },
   {
-    "revision": "733ea5af88bc2d7ff21d",
-    "url": "/Game-of-Life/static/js/main.733ea5af.chunk.js"
+    "revision": "c5d93b9e8ee238468d77",
+    "url": "/Game-of-Life/static/js/main.c5d93b9e.chunk.js"
   },
   {
     "revision": "fa92c112869d3657d47b",
     "url": "/Game-of-Life/static/js/1.fa92c112.chunk.js"
   },
   {
-    "revision": "733ea5af88bc2d7ff21d",
+    "revision": "c5d93b9e8ee238468d77",
     "url": "/Game-of-Life/static/css/main.6810100b.chunk.css"
   },
   {
-    "revision": "2aadde329030b155c3f01be33ac57f9b",
+    "revision": "dcfdb1249123b5b125dbc54115a99fb9",
     "url": "/Game-of-Life/index.html"
   }
 ];
